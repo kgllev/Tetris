@@ -58,4 +58,49 @@ defmodule Tetris.Brick do
   def rotate(270), do: 0
 
   def rotate(degrees), do: degrees + 90
+
+  def points(%{name: :l}) do
+    [
+      {2, 1},
+      {2, 2},
+      {2, 3},
+      {3, 3}
+    ]
+  end
+
+  def points(%{name: :t}) do
+    [
+      {2, 1},
+      {2, 2},
+      {3, 2},
+      {2, 3}
+    ]
+  end
+
+  def points(%{name: :i}) do
+    [
+      {2, 1},
+      {2, 2},
+      {2, 3},
+      {2, 4}
+    ]
+  end
+
+  def points(%{name: :o}) do
+    [
+      {2, 2},
+      {3, 2},
+      {2, 3},
+      {3, 3}
+    ]
+  end
+
+  def points(%{name: :z}) do
+    [
+      {2, 2},
+      {2, 3},
+      {3, 3},
+      {3, 4}
+    ]
+  end
 end
